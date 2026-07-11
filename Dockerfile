@@ -1,5 +1,8 @@
 FROM node:22-bullseye-slim
 
+# Set environment to production
+ENV NODE_ENV=production
+
 # Install necessary system dependencies for PDF and Image processing
 RUN apt-get update && apt-get install -y \
     ghostscript \
@@ -14,7 +17,7 @@ WORKDIR /app
 
 # Install dependencies
 COPY package.json ./
-RUN npm install
+RUN npm install --production=false
 
 # Copy application files
 COPY . .

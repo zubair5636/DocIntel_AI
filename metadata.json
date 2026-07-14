@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "PDF & Image Utilities",
+  "description": "An all-in-one suite of browser-based utilities to compress PDFs, convert file formats, remove image backgrounds, and extract text using Gemini AI.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
